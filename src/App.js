@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import Flexbox from 'flexbox-react'
 import { getInitialState, saveState, resetState } from './data/decision'
 import { getOperations } from './data/operations'
-import { paths } from './data/paths'
 
 import { DecisionText } from './DecisionText'
 import { Factors } from './Factors'
 import { Choices } from './Choices'
+import { Scores } from './Scores'
 
 export const App = () => {
   const [decision, updateDecision] = useState(getInitialState())
@@ -22,5 +22,6 @@ export const App = () => {
     <DecisionText decision={decision} operations={operations} />
     <Factors decision={decision} operations={operations} />
     <Choices decision={decision} operations={operations} />
+    <Scores decision={decision} />
   </Flexbox>)
 }

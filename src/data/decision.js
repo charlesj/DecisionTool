@@ -4,7 +4,7 @@ const localStorageKey = 'decisionData'
 
 export const getInitialState = () => {
   const local = window.localStorage.getItem(localStorageKey)
-  console.log('local', local)
+
   if (!local || local === '') {
     return Map()
   }
