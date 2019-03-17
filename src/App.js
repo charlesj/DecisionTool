@@ -11,6 +11,6 @@ export const App = () => {
   return (<Flexbox flexDirection='column'>
     <h1>Decision Tool</h1>
     <h2>1. Enter the decision you want to make</h2>
-    <textarea value={decision.getIn(paths.decisionText, '')} onChange={(e) => operations.addDecisionText(e.target.value)} />
+    <textarea value={decision.getIn(paths.decisionText, '')} onChange={(e) => operations.updateDecisionText(e.target.value)} />
   </Flexbox>)
 }

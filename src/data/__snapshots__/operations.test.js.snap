@@ -1,9 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getOperations includes addDecisionText 1`] = `
-Array [
-  Immutable.Map {
-    "decisionText": "new decision text",
-  },
-]
+exports[`add choice 1`] = `
+Immutable.Map {
+  "add choice": Immutable.List [],
+}
+`;
+
+exports[`add factor 1`] = `
+Immutable.Map {
+  "addFactor": Immutable.List [],
+}
+`;
+
+exports[`getOperations includes updateDecisionText 1`] = `
+Immutable.Map {
+  "updateDecisionText": Immutable.List [
+    "new decision text",
+  ],
+}
+`;
+
+exports[`remove choice 1`] = `
+Immutable.Map {
+  "remove choice": Immutable.List [
+    "choice-id",
+  ],
+}
+`;
+
+exports[`remove factor 1`] = `
+Immutable.Map {
+  "removefactor": Immutable.List [
+    "factor id",
+  ],
+}
+`;
+
+exports[`update choice factor score 1`] = `
+Immutable.Map {
+  "choice factor score": Immutable.List [
+    "choice-id",
+    "factor-id",
+    "score",
+  ],
+}
+`;
+
+exports[`update choice name 1`] = `
+Immutable.Map {
+  "update choice name": Immutable.List [
+    "choice-id",
+    "new name",
+  ],
+}
+`;
+
+exports[`update factor name 1`] = `
+Immutable.Map {
+  "update factor name": Immutable.List [
+    "factorId",
+    "factor name",
+  ],
+}
+`;
+
+exports[`update factor weight 1`] = `
+Immutable.Map {
+  "factor weight": Immutable.List [
+    "factorId",
+    "factor weight",
+  ],
+}
 `;

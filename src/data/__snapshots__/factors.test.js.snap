@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addFactor adds the factor to the state 1`] = `
+Immutable.Map {
+  "factors": Immutable.Map {
+    "id-0": Immutable.Map {
+      "name": "factor id-0",
+    },
+  },
+}
+`;
+
+exports[`removeFactor removes the given factor 1`] = `
+Immutable.Map {
+  "factors": Immutable.Map {
+    "factor2": Immutable.Map {
+      "name": "this factor stays",
+    },
+  },
+}
+`;
+
+exports[`updateFactorName updates the name of the factor given 1`] = `
+Immutable.Map {
+  "factors": Immutable.Map {
+    "factor-id-1": Immutable.Map {
+      "name": "new name",
+    },
+  },
+}
+`;
+
+exports[`updateFactorWeight updates the weight of the factor 1`] = `
+Immutable.Map {
+  "factors": Immutable.Map {
+    "factor-id-1": Immutable.Map {
+      "name": "old name",
+      "weight": "3",
+    },
+  },
+}
+`;

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addChoice adds the choice to the state 1`] = `
+Immutable.Map {
+  "choices": Immutable.Map {
+    "id-0": Immutable.Map {
+      "name": "choice id-0",
+    },
+  },
+}
+`;
+
+exports[`removeChoice removes the given choice 1`] = `
+Immutable.Map {
+  "choices": Immutable.Map {
+    "choice2": Immutable.Map {
+      "name": "this choice stays",
+    },
+  },
+}
+`;
+
+exports[`updateChoiceName updates the name of the choice given 1`] = `
+Immutable.Map {
+  "choices": Immutable.Map {
+    "choice-id-1": Immutable.Map {
+      "name": "new name",
+    },
+  },
+}
+`;
+
+exports[`updateFactorScore updates the score for a given choice and factor 1`] = `
+Immutable.Map {
+  "choices": Immutable.Map {
+    "choice-id-1": Immutable.Map {
+      "name": "old name",
+      "scores": Immutable.Map {
+        "factor-id-1": 2,
+      },
+    },
+  },
+}
+`;

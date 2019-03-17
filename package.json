@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development --dev inline-source-map",
-    "test": "jest"
+    "test": "jest --config ./jest.config.js"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
@@ -16,6 +16,7 @@
     "jest": "^24.5.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "shortid": "^2.2.14",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
