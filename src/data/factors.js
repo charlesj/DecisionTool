@@ -4,7 +4,7 @@ import { paths } from './paths'
 
 export const addFactor = (state) => {
   const factorId = shortid()
-  return state.setIn(paths.factor(factorId), fromJS({ name: `factor ${factorId}` }))
+  return state.setIn(paths.factor(factorId), fromJS({ factorId, name: `factor ${factorId}` }))
 }
 
 export const updateFactorName = (state, factorId, name) => {

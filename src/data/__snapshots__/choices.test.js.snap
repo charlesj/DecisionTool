@@ -4,6 +4,7 @@ exports[`addChoice adds the choice to the state 1`] = `
 Immutable.Map {
   "choices": Immutable.Map {
     "id-0": Immutable.Map {
+      "choiceId": "id-0",
       "name": "choice id-0",
     },
   },

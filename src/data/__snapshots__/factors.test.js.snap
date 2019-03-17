@@ -4,6 +4,7 @@ exports[`addFactor adds the factor to the state 1`] = `
 Immutable.Map {
   "factors": Immutable.Map {
     "id-0": Immutable.Map {
+      "factorId": "id-0",
       "name": "factor id-0",
     },
   },

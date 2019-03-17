@@ -4,7 +4,7 @@ import { paths } from './paths'
 
 export const addChoice = (state) => {
   const choiceId = shortid()
-  return state.setIn(paths.choice(choiceId), fromJS({ name: `choice ${choiceId}` }))
+  return state.setIn(paths.choice(choiceId), fromJS({ choiceId, name: `choice ${choiceId}` }))
 }
 
 export const updateChoiceName = (state, choiceId, name) => {

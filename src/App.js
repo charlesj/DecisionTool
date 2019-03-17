@@ -1,16 +1,24 @@
 import React, { useState } from 'react'
 import Flexbox from 'flexbox-react'
-import { getInitialState } from './data/decision'
+import { getInitialState, saveState, resetState } from './data/decision'
 import { getOperations } from './data/operations'
 import { paths } from './data/paths'
 
+import { DecisionText } from './DecisionText'
+import { Factors } from './Factors'
+
 export const App = () => {
   const [decision, updateDecision] = useState(getInitialState())
-  const operations = getOperations(decision, updateDecision)
-  console.log('decision', decision.toJS())
+  const update = (updatedState) => {
+    saveState(updatedState)
+    updateDecision(updatedState)
+  }
+  const operations = getOperations(decision, update)
+
   return (<Flexbox flexDirection='column'>
     <h1>Decision Tool</h1>
-    <h2>1. Enter the decision you want to make</h2>
-    <textarea value={decision.getIn(paths.decisionText, '')} onChange={(e) => operations.updateDecisionText(e.target.value)} />
+    <button onClick={resetState}>Reset</button>
+    <DecisionText decision={decision} operations={operations} />
+    <Factors decision={decision} operations={operations} />
   </Flexbox>)
 }
