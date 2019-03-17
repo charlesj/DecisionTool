@@ -22,5 +22,16 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, buildFolder),
     publicPath: '/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        }
+      }
+    ]
   }
 }
