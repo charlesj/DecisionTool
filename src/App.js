@@ -6,6 +6,7 @@ import { paths } from './data/paths'
 
 import { DecisionText } from './DecisionText'
 import { Factors } from './Factors'
+import { Choices } from './Choices'
 
 export const App = () => {
   const [decision, updateDecision] = useState(getInitialState())
@@ -20,5 +21,6 @@ export const App = () => {
     <button onClick={resetState}>Reset</button>
     <DecisionText decision={decision} operations={operations} />
     <Factors decision={decision} operations={operations} />
+    <Choices decision={decision} operations={operations} />
   </Flexbox>)
 }
