@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getOperations includes addDecisionText 1`] = `
+Array [
+  Immutable.Map {
+    "decisionText": "new decision text",
+  },
+]
+`;
